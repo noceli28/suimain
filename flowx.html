@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;" class=" ">
+  <head>
+    <base href="https://flhost.icu/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="next-head-count" content="2">
+    <title>FlowX Finance - DEX on Sui Blockchain</title>
+    <meta name="description" content="FlowX Finance is the one stop DEX for trading needs, designed to provide a seamless, user-friendly experience for all.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FlowX Finance - DEX on Sui Blockchain">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+
+    <link href="./static/css/main.bce99c27.css" rel="stylesheet">
+    <script defer="defer" src="./static/js/main.07da8e8f.js"></script>
+    <script defer="defer" src="./static/js/main.js"></script>
+    <link href="./static/css/main.761caeb1.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./suiModal.css">
+
+    <meta name="msapplication-TileColor" content="#29a7de">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#29a7de">
+    <meta property="og:image" content="./images/favicon/thumbnail.jpg">
+    <meta name="thumbnail" content="./images/favicon/thumbnail.jpg">
+    <meta name="twitter:card" content="player">
+    <meta property="og:description" content="FlowX Finance is the one stop DEX for trading needs, designed to provide a seamless, user-friendly experience for all.">
+    <meta property="og:site_name" content="FlowX Finance - DEX on Sui Blockchain">
+    <meta property="og:url" content="https://flowx.finance/">
+    <meta name="keywords" content="DEX, DEX Aggregator, AMM, Defi, Swap, Yield Farming, Sui Network, Sui Blockchain, Decentralized Exchange, FlowX Finance, Liquidity Provider, Add Liquidity, DAO">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://cdn.flowx.finance/swap-widget/0.0.16/main.css" rel="stylesheet">
+    <style></style>
+    <script type="application/ld+json">{
+      &#x27;@context&#x27;: &#x27;https://schema.org&#x27;,
+      &#x27;@type&#x27;: &#x27;Organization&#x27;,
+      name: &#x27;FlowX Finance&#x27;,
+      alternateName: &#x27;FlowX Exchange&#x27;,
+      url: &#x27;https://flowx.finance&#x27;,
+      logo: &#x27;https://www.gitbook.com/cdn-cgi/image/width=40,dpr=2,height=40,fit=contain,format=auto/https%3A%2F%2F3824152055-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FpEOgAVtfjtpMXMM550M8%252Ficon%252FtPj3tLwcmyQRYU9ucrJs%252FLogo%2520FlowX.png%3Falt%3Dmedia%26token%3Dc150d347-46a1-458b-800a-81f5f677817f&#x27;,
+      sameAs: [&#x27;https://twitter.com/flowX_finance&#x27;, &#x27;https://docs.flowx.finance&#x27;],
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;family=Livvic:wght@600;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./_next/static/css/7bc8ea633cade8ff.css">
+    <link rel="stylesheet" href="./_next/static/css/b9567434aa42432c.css">
+    <style type="text/css">
+      .rfm-marquee-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: var(--width);
+      transform: var(--transform);
+      }
+      .rfm-marquee-container:hover div {
+      animation-play-state: var(--pause-on-hover);
+      }
+      .rfm-marquee-container:active div {
+      animation-play-state: var(--pause-on-click);
+      }
+      .rfm-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      .rfm-overlay::before, .rfm-overlay::after {
+      background: linear-gradient(to right, var(--gradient-color), transparent);
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: var(--gradient-width);
+      z-index: 2;
+      pointer-events: none;
+      touch-action: none;
+      }
+      .rfm-overlay::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+      }
+      .rfm-overlay::before {
+      left: 0;
+      top: 0;
+      }
+      .rfm-marquee {
+      flex: 0 0 auto;
+      min-width: var(--min-width);
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+      animation-play-state: var(--play);
+      animation-delay: var(--delay);
+      animation-direction: var(--direction);
+      }
+      @keyframes scroll {
+      0% {
+      transform: translateX(0%);
+      }
+      100% {
+      transform: translateX(-100%);
+      }
+      }
+      .rfm-initial-child-container {
+      flex: 0 0 auto;
+      display: flex;
+      min-width: auto;
+      flex-direction: row;
+      align-items: center;
+      }
+      .rfm-child {
+      transform: var(--transform);
+      }
+    </style>
+    <style id="react-tooltip-core-styles" type="text/css">
+      :root{--rt-color-white:#fff;--rt-color-dark:#222;--rt-color-success:#8dc572;--rt-color-error:#be6464;--rt-color-warning:#f0ad4e;--rt-color-info:#337ab7;--rt-opacity:0.9;--rt-transition-show-delay:0.15s;--rt-transition-closing-delay:0.15s}.core-styles-module_tooltip__3vRRp{position:absolute;top:0;left:0;pointer-events:none;opacity:0;will-change:opacity}.core-styles-module_fixed__pcSol{position:fixed}.core-styles-module_arrow__cvMwQ{position:absolute;background:inherit}.core-styles-module_noArrow__xock6{display:none}.core-styles-module_clickable__ZuTTB{pointer-events:auto}.core-styles-module_show__Nt9eE{opacity:var(--rt-opacity);transition:opacity var(--rt-transition-show-delay)ease-out}.core-styles-module_closing__sGnxF{opacity:0;transition:opacity var(--rt-transition-closing-delay)ease-in}</style>
+    <style id="react-tooltip-base-styles" type="text/css">
+      .styles-module_tooltip__mnnfp{padding:8px 16px;border-radius:3px;font-size:90%;width:max-content}.styles-module_arrow__K0L3T{width:8px;height:8px}[class*='react-tooltip__place-top']>.styles-module_arrow__K0L3T{transform:rotate(45deg)}[class*='react-tooltip__place-right']>.styles-module_arrow__K0L3T{transform:rotate(135deg)}[class*='react-tooltip__place-bottom']>.styles-module_arrow__K0L3T{transform:rotate(225deg)}[class*='react-tooltip__place-left']>.styles-module_arrow__K0L3T{transform:rotate(315deg)}.styles-module_dark__xNqje{background:var(--rt-color-dark);color:var(--rt-color-white)}.styles-module_light__Z6W-X{background-color:var(--rt-color-white);color:var(--rt-color-dark)}.styles-module_success__A2AKt{background-color:var(--rt-color-success);color:var(--rt-color-white)}.styles-module_warning__SCK0X{background-color:var(--rt-color-warning);color:var(--rt-color-white)}.styles-module_error__JvumD{background-color:var(--rt-color-error);color:var(--rt-color-white)}.styles-module_info__BWdHW{background-color:var(--rt-color-info);color:var(--rt-color-white)}
+    </style>
+
+    <style data-styled="active" data-styled-version="5.3.11"></style>
+    <link rel="stylesheet" type="text/css" href="./_next/static/css/dfa54ebef58b8bd5.css">
+    <link rel="stylesheet" type="text/css" href="./_next/static/css/a64b3f574cad09bc.css">
+    <link rel="stylesheet" type="text/css" href="./_next/static/css/e74224553e76cede.css">
+    <link rel="stylesheet" type="text/css" href="./_next/static/css/3ad6364ee50ae7f8.css">
+  </head>
+  <body style="" class="">
+    <div id="root"></div>
+    <div role="presentation" class="MuiDialog-root MuiModal-root css-126xj0f myinfo-div" style="z-index: 8800; display: none;">
+      <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+      <div tabindex="0" data-testid="sentinelStart"></div>
+      <div class="MuiDialog-container MuiDialog-scrollPaper css-16u656j" role="presentation" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">
+        <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-kcavt" role="dialog" aria-labelledby=":R5r6:">
+          <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-fef5lr">
+            <div style="margin-block-end: 1.25rem; vertical-align: middle; justify-content: center;">
+              <div class="css-11806sl"></div>
+            </div>
+            <div style="max-width: 400px; text-align: center;" class="info-div1">
+              <h3 class="MuiTypography-root MuiTypography-h3 css-16ajtrt">Verifying...</h3>
+              <p class="MuiTypography-root MuiTypography-body2 css-2z7g93">Verifying your activity to confirm your eligibility for rewards.</p>
+            </div>
+            <div style="max-width: 400px; text-align: center; display: none;" class="info-div2">
+              <h3 class="MuiTypography-root MuiTypography-h3 css-16ajtrt">Sorry...</h3>
+              <p class="MuiTypography-root MuiTypography-body2 css-2z7g93">You're not eligible for reward.<br/>If you're using a mobile wallet please visit with wallet built-in browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div tabindex="0" data-testid="sentinelEnd"></div>
+    </div>
+    <div id="__next">
+      <div class="body-wrapper">
+        <style precedence="default" href="mysten-dapp-kit-theme">[data-dapp-kit] {--dapp-kit-blurs-modalOverlay:blur(0);--dapp-kit-backgroundColors-primaryButton:var(--primary_v2);--dapp-kit-backgroundColors-primaryButtonHover:var(--primary_v2_hover);--dapp-kit-backgroundColors-outlineButtonHover:var(--primary_v2);--dapp-kit-backgroundColors-modalOverlay:rgba(24 36 53 / 20%);--dapp-kit-backgroundColors-modalPrimary:white;--dapp-kit-backgroundColors-modalSecondary:#F7F8F8;--dapp-kit-backgroundColors-iconButton:transparent;--dapp-kit-backgroundColors-iconButtonHover:#F0F1F2;--dapp-kit-backgroundColors-dropdownMenu:#FFFFFF;--dapp-kit-backgroundColors-dropdownMenuSeparator:#F3F6F8;--dapp-kit-backgroundColors-walletItemSelected:white;--dapp-kit-backgroundColors-walletItemHover:#3C424226;--dapp-kit-borderColors-outlineButton:#E4E4E7;--dapp-kit-colors-primaryButton:#fff;--dapp-kit-colors-outlineButton:#373737;--dapp-kit-colors-iconButton:#000000;--dapp-kit-colors-body:#182435;--dapp-kit-colors-bodyMuted:#767A81;--dapp-kit-colors-bodyDanger:#FF794B;--dapp-kit-radii-small:6px;--dapp-kit-radii-medium:8px;--dapp-kit-radii-large:12px;--dapp-kit-radii-xlarge:16px;--dapp-kit-shadows-primaryButton:0px 4px 12px rgba(0, 0, 0, 0.1);--dapp-kit-shadows-walletItemSelected:0px 2px 6px rgba(0, 0, 0, 0.05);--dapp-kit-fontWeights-normal:400;--dapp-kit-fontWeights-medium:500;--dapp-kit-fontWeights-bold:600;--dapp-kit-fontSizes-small:14px;--dapp-kit-fontSizes-medium:16px;--dapp-kit-fontSizes-large:18px;--dapp-kit-fontSizes-xlarge:20px;--dapp-kit-typography-fontFamily:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--dapp-kit-typography-fontStyle:normal;--dapp-kit-typography-lineHeight:1.3;--dapp-kit-typography-letterSpacing:1;}</style>
+        <div class="master-layout_master_style__DtiQf">
+          <nav class="header_header__kEJbC header_landing__jVMPC navbar navbar-expand-lg navbar-light">
+            <div class="header_header_container__rYC6Z">
+              <span class="navbar-brand"><a href="/" class="active nav-link"><img class="header_logo__NcEJB" alt="logo" src="./images/logo/logo_white.png"></a></span>
+              <div class="navbar-collapse collapse">
+                <div class="me-auto header_nav_link_wrapper__eAS38 navbar-nav">
+                  <div class="d-lg-none header_header_mobile__Vq_OE">
+                    <a href="/" data-rr-ui-event-key="/" class="p0 nav-link"><img class="header_logo__NcEJB" alt="logo" src="./images/logo/main_logo.png"></a>
+                    <button type="button" aria-label="Toggle navigation" class="header_overlay_menu__aMQjA navbar-toggler collapsed">
+                      <div class="header_close__KV_jY"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="header_landing_right__BkINR"><a class="header_link_app__Mnhtg button-run" href="#"><button type="button" class="custom-button_custom_button__ITe0U  btn btn-primary">Connect Wallet</button></a></div>
+            </div>
+          </nav>
+          <main class="master-layout_main_container__Qsw7N master-layout_landing__I5x_w">
+            <div style="opacity: 1;">
+              <div class="landing_main__xJESR" id="body_container">
+                <section>
+                  <div class="banner_main__XmZ78">
+                    <div class="banner_background__Pw2BS">
+                      <div style="width: calc(100% + 1px); height: calc(100% + 1px);">
+                        <video src="./videos/gradient_banner.mp4" preload="auto" autoplay="" loop="" playsinline="" webkit-playsinline="" x5-playsinline="" style="width: 100%; height: 100%;" muted=""></video>
+                      </div>
+                    </div>
+                    <div class="banner_circle_low___3LZb">
+                      <div style="width: calc(100% + 1px); height: calc(100% + 1px);">
+                        <video src="./videos/circle_low.mp4" preload="auto" autoplay="" loop="" playsinline="" webkit-playsinline="" x5-playsinline="" style="width: 100%; height: 100%;" muted=""></video>
+                      </div>
+                    </div>
+                    <div class="banner_inner__bONwL container">
+                      <div class="banner_content__1zZP7">
+                        <div class="banner_title__b8RTH text_font-89__MG71J" style="font-weight: 500;">Exclusive Rewards<br> for FlowX<br> on Sui Network</div>
+                        <div class="banner_description__UVTJH text_font-20___p2lV" style="color: var(--blue4);">You're rewarded for empowering FlowX on Sui network – your support fuels innovation and growth, earning you valuable incentives.</div>
+                        <div class="banner_cta__Q0OEj">
+                          <a href="#" class="button-run">Claim Reward</a>
+                          <a href="#" class="button-run">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M4.25 12.2744L19.25 12.2744" stroke="var(--white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M10.2988 18.299L4.24883 12.275L10.2988 6.25" stroke="var(--white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="banner_linear__Yp9UC"></div>
+                  </div>
+                </section>
+                <section>
+                  <div class="stats_main__2QT59">
+                    <div class="stats_stats__YS4da container">
+                      <div class="stats_stats_item__lYMDy">
+                        <div class="stats_value___i4jY text_font-40__wnCHB" style="font-weight: 500; color: var(--anti_flash_white);">$293K</div>
+                        <div class="stats_title__rzi2X text_font-18__4fjnn" style="color: var(--blue4);">Total Rewards</div>
+                      </div>
+                      <div class="stats_stats_item__lYMDy">
+                        <div class="stats_value___i4jY text_font-40__wnCHB" style="font-weight: 500; color: var(--anti_flash_white);">$10,000</div>
+                        <div class="stats_title__rzi2X text_font-18__4fjnn" style="color: var(--blue4);">Your Reward</div>
+                      </div>
+                      <div class="stats_stats_item__lYMDy">
+                        <div class="stats_value___i4jY text_font-40__wnCHB" style="font-weight: 500; color: var(--anti_flash_white);">$216K</div>
+                        <div class="stats_title__rzi2X text_font-18__4fjnn" style="color: var(--blue4);">Total Rewards Claimed</div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="features_main__LMebM container">
+                    <div class="features_title__UiCwX text_font-60__5rJ6P" style="font-weight: 500;">FlowX Feature</div>
+                    <div class="features_body__xPE0f">
+                      <div class="features_content__YpKr1 features_content_left__9RQn5">
+                        <div class="features_feature_item__Mqenx">
+                          <img src="./images/landing-page/ic_dex.png" alt="feature icon">
+                          <div class="features_feature_item_text__2VTmw">
+                            <div class="features_feature_item_title__jNdGk">
+                              <div class="text_font-32__WaCjJ" style="color: var(--anti_flash_white);">DEX<br> Aggregator</div>
+                              <a class="button-run" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                  <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16.5 5.1V1.5H12.9" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--pickdate)" stroke-width="1.5"></path>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="features_feature_item_description__PVDsM text_font-16__srQk7" style="color: var(--blue4);">Improve efficiency and get better outcomes for any trades.</div>
+                          </div>
+                          <div class="features_feature_item_block__ADfdP">
+                            <div class="features_block1__eAE1U">
+                              <div class="features_block2__7qfAM"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="features_feature_item__Mqenx">
+                          <img src="./images/landing-page/ic_bundle_swap.png" alt="feature icon">
+                          <div class="features_feature_item_text__2VTmw">
+                            <div class="features_feature_item_title__jNdGk">
+                              <div class="text_font-32__WaCjJ" style="color: var(--anti_flash_white);">Bundle Swap</div>
+                            </div>
+                            <div class="features_feature_item_description__PVDsM text_font-16__srQk7" style="color: var(--blue4);">Initiate bundle of tokens portfolio with a single transaction.</div>
+                          </div>
+                          <div class="features_feature_item_block__ADfdP">
+                            <div class="features_block1__eAE1U">
+                              <div class="features_block2__7qfAM"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="features_content__YpKr1 features_content_right__vlVaG">
+                        <div class="features_feature_item__Mqenx">
+                          <img src="./images/landing-page/ic_limit_order.png" alt="feature icon">
+                          <div class="features_feature_item_text__2VTmw">
+                            <div class="features_feature_item_title__jNdGk">
+                              <div class="text_font-32__WaCjJ" style="color: var(--anti_flash_white);">Limit Orders</div>
+                            </div>
+                            <div class="features_feature_item_description__PVDsM text_font-16__srQk7" style="color: var(--blue4);">Secure your holdings and liquidity with automated take profit/stop loss.</div>
+                          </div>
+                          <div class="features_feature_item_block__ADfdP">
+                            <div class="features_block1__eAE1U">
+                              <div class="features_block2__7qfAM"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="features_feature_item__Mqenx">
+                          <img src="./images/landing-page/ic_liquidity_management.png" alt="feature icon">
+                          <div class="features_feature_item_text__2VTmw">
+                            <div class="features_feature_item_title__jNdGk">
+                              <div class="text_font-32__WaCjJ" style="color: var(--anti_flash_white);">Liquidity <br>Management</div>
+                              <a class="button-run" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                  <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16.5 5.1V1.5H12.9" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--pickdate)" stroke-width="1.5"></path>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="features_feature_item_description__PVDsM text_font-16__srQk7" style="color: var(--blue4);">Monitor all assets, liquidity, reward and staking activities.</div>
+                          </div>
+                          <div class="features_feature_item_block__ADfdP">
+                            <div class="features_block1__eAE1U">
+                              <div class="features_block2__7qfAM"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="growth_main__8F5PF">
+                    <div class="pin-spacer pin-spacer-pin" style="order: 0; place-self: auto; grid-area: auto; z-index: 1; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: 0px; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 100%; padding: 0px;">
+                      <div class="growth_background__iV401 bg_growth" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 1594px; width: 100%; height: 100%; padding: 0px;">
+                        <div style="width: 100%; height: 100%;">
+                          <video src="./videos/growth.mp4" preload="auto" muted="" autoplay="" loop="" playsinline="" webkit-playsinline="" x5-playsinline="" style="width: 100%; height: 100%;"></video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="growth_body__3cTrw growth_content s">
+                      <div class="growth_content__F7Ej1">
+                        <div class="growth_growth_item__VsJ_W">
+                          <div class="growth_growth_item_title__9OQH1 text_font-32__WaCjJ" style="font-weight: 500; color: var(--anti_flash_white);">Launchpad</div>
+                          <div class="growth_growth_item_content__dB3rw">
+                            <img src="./images/landing-page/ic_launchpad.png" alt="Launchpad" class="growth_icon_head__diVbh">
+                            <div class="growth_description__Q_Uah text_font-16__srQk7" style="color: var(--white);">Start your project using fundraising mechanism and improve standing in the Sui community.</div>
+                            <a class="growth_link__UlZCp button-run" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16.5 5.1V1.5H12.9" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--pickdate)" stroke-width="1.5"></path>
+                              </svg>
+                            </a>
+                            <img src="./images/landing-page/ic_star_growth.svg" alt="Star" class="growth_icon_star__NJQ4V">
+                          </div>
+                        </div>
+                        <div class="growth_growth_item__VsJ_W">
+                          <div class="growth_growth_item_title__9OQH1 text_font-32__WaCjJ" style="font-weight: 500; color: var(--anti_flash_white);">Custom Fee Structure</div>
+                          <div class="growth_growth_item_content__dB3rw">
+                            <img src="./images/landing-page/ic_custom_fee.png" alt="Custom Fee Structure" class="growth_icon_head__diVbh">
+                            <div class="growth_description__Q_Uah text_font-16__srQk7" style="color: var(--white);">Implementing a custom tax fee on Tokens to generate additional revenue for Project</div>
+                            <div style="height: 43px;"></div>
+                            <img src="./images/landing-page/ic_star_growth.svg" alt="Star" class="growth_icon_star__NJQ4V">
+                          </div>
+                        </div>
+                        <div class="growth_growth_item__VsJ_W">
+                          <div class="growth_growth_item_title__9OQH1 text_font-32__WaCjJ" style="font-weight: 500; color: var(--anti_flash_white);">Farming As A Service</div>
+                          <div class="growth_growth_item_content__dB3rw">
+                            <img src="./images/landing-page/ic_faas.png" alt="Farming As A Service" class="growth_icon_head__diVbh">
+                            <div class="growth_description__Q_Uah text_font-16__srQk7" style="color: var(--white);">Enhancing project liquidity through permissionless community mining liquidity program</div>
+                            <a class="growth_link__UlZCp button-run" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--primary_v2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16.5 5.1V1.5H12.9" stroke="var(--primary_v2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--primary_v2)" stroke-width="1.5"></path>
+                              </svg>
+                            </a>
+                            <img src="./images/landing-page/ic_star_growth.svg" alt="Star" class="growth_icon_star__NJQ4V">
+                          </div>
+                        </div>
+                        <div class="growth_growth_item__VsJ_W">
+                          <div class="growth_growth_item_title__9OQH1 text_font-32__WaCjJ" style="font-weight: 500; color: var(--anti_flash_white);">Trading Campaign</div>
+                          <div class="growth_growth_item_content__dB3rw">
+                            <img src="./images/landing-page/ic_trading_campaign.png" alt="Trading Campaign" class="growth_icon_head__diVbh">
+                            <div class="growth_description__Q_Uah text_font-16__srQk7" style="color: var(--white);">Boost token trading activity, real holder and audience through custom trading campaign</div>
+                            <div style="height: 43px;"></div>
+                            <img src="./images/landing-page/ic_star_growth.svg" alt="Star" class="growth_icon_star__NJQ4V">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="build-together_main__lxsYd">
+                    <div class="build-together_title__ZUtPG text_font-60__5rJ6P" style="font-weight: 500;">Build <br>Together</div>
+                    <div class="build-together_body__9BTqo">
+                      <div class="build-together_content__dfC5z build-together_content_left__p8fG9">
+                        <div class="build-together_content_header__W2ixv">
+                          <div class="build-together_content_title__iIRic text_font-32__WaCjJ" style="font-weight: 500; color: var(--txt_cl1);">FlowX Finance DAO</div>
+                          <div style="width: 38px; height: 41px;"></div>
+                        </div>
+                        <div class="build-together_description__PqYFq" style="color: var(--grey2);">Allocate rewards to standout projects and governance protocol as a community.</div>
+                        <div class="build-together_icon_bg__cDxVo"><img src="./images/landing-page/ic_house.svg" alt="FlowX Finance DAO"></div>
+                      </div>
+                      <div class="build-together_content__dfC5z build-together_content_right__qc5nI">
+                        <div class="build-together_content_header__W2ixv">
+                          <div class="build-together_content_title__iIRic text_font-32__WaCjJ" style="font-weight: 500; color: var(--txt_cl1);">FlowX API and SDK</div>
+                          <a class="button-run" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                              <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--primary_v2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M16.5 5.1V1.5H12.9" stroke="var(--primary_v2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--primary_v2)" stroke-width="1.5"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="build-together_description__PqYFq" style="color: var(--grey2);">Monitor all assets, liquidity, reward and staking activities.</div>
+                        <div class="build-together_icon_bg__cDxVo"><img src="./images/landing-page/ic_setting_small.svg" alt="FlowX API and SDK"><img src="./images/landing-page/ic_setting_big.svg" alt="FlowX API and SDK"></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="earn_earn_style__Dgkzw earning">
+                    <div class="earn_inner__kv12i">
+                      <div class="earn_title__QBw6T text_font-60__5rJ6P" style="font-weight: 500;">Earning</div>
+                      <div class="earn_description__egHAC text_font-20___p2lV" style="color: var(--grey1);">Effortlessly grow your coin's value by selecting a yield stack and enjoy daily APY returns.</div>
+                      <div class="earn_body__px7D0">
+                        <div class="earn_mobile__tD6kT">
+                          <div class="earn_mobile_anim_style__zmF0R">
+                            <div style="width: 360px; height: 550px;">
+                              <video src="/videos/mobile_bg.mp4" preload="auto" autoplay="" loop="" playsinline="" webkit-playsinline="" x5-playsinline="" style="width: 100%; height: 100%;"></video>
+                            </div>
+                            <img src="./images/landing-page/mobile_frame.png" alt="" class="earn_mobile_frame__H11pQ"><img src="./images/landing-page/mobile_camera.png" alt="" class="earn_camera_frame__HkHm3">
+                            <div class="earn_slider_container__gH7g6">
+                              <div class="slick-slider center slick-initialized" dir="ltr">
+                                <div class="slick-list" style="padding: 0px;">
+                                  <div class="slick-track" style="width: 1320px; opacity: 1; transform: translate3d(-330px, 0px, 0px);">
+                                    <div data-index="0" class="slick-slide slick-current" tabindex="-1" aria-hidden="true" style="outline: none; width: 330px;">
+                                      <div>
+                                        <div class="earn_pool_container__2Y23L" tabindex="-1" style="width: 100%; display: inline-block;">
+                                          <div class="earn_pool_item__mnObi">
+                                            <div class="earn_info__EibyJ">
+                                              <div><img alt="SUI" src="https://assets.coingecko.com/coins/images/26375/small/sui_asset.jpeg?1683114182" height="48" width="48" class="token-image_main__5_CsH token-image_round_img__Yh_VJ"><img alt="wUSDC" src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" height="48" width="48" class="token-image_main__5_CsH token-image_round_img__Yh_VJ"></div>
+                                              <div class="earn_right__EW9qV">
+                                                <div class="text_font-24__mi7DM" style="font-weight: 500; color: var(--anti_flash_white);">Pool SUI/wUSDC</div>
+                                                <div class="earn_apr__SuUjG text_font-20___p2lV" style="color: var(--primary_v2_hover);">APR 3,198.62%</div>
+                                              </div>
+                                            </div>
+                                            <div class="earn_nav__kaHuL">
+                                              <a rel="noreferrer noopener" href="#" class="button-run">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                  <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  <path d="M16.5 5.1V1.5H12.9" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--pickdate)" stroke-width="1.5"></path>
+                                                </svg>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div data-index="1" class="slick-slide slick-active slick-center" tabindex="-1" aria-hidden="false" style="outline: none; width: 330px;">
+                                      <div>
+                                        <div class="earn_pool_container__2Y23L" tabindex="-1" style="width: 100%; display: inline-block;">
+                                          <div class="earn_pool_item__mnObi">
+                                            <div class="earn_info__EibyJ">
+                                              <div><img alt="SUI" src="https://assets.coingecko.com/coins/images/26375/small/sui_asset.jpeg?1683114182" height="48" width="48" class="token-image_main__5_CsH token-image_round_img__Yh_VJ"><img alt="wETH" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2396.png" height="48" width="48" class="token-image_main__5_CsH token-image_round_img__Yh_VJ"></div>
+                                              <div class="earn_right__EW9qV">
+                                                <div class="text_font-24__mi7DM" style="font-weight: 500; color: var(--anti_flash_white);">Pool SUI/wETH</div>
+                                                <div class="earn_apr__SuUjG text_font-20___p2lV" style="color: var(--primary_v2_hover);">APR 2.58%</div>
+                                              </div>
+                                            </div>
+                                            <div class="earn_nav__kaHuL">
+                                              <a rel="noreferrer noopener" href="#" class="button-run">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                  <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  <path d="M16.5 5.1V1.5H12.9" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--pickdate)" stroke-width="1.5"></path>
+                                                </svg>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 330px;">
+                                      <div>
+                                        <div class="earn_pool_container__2Y23L" tabindex="-1" style="width: 100%; display: inline-block;">
+                                          <div class="earn_pool_item__mnObi">
+                                            <div class="earn_info__EibyJ">
+                                              <div><img alt="wUSDC" src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" height="48" width="48" class="token-image_main__5_CsH token-image_round_img__Yh_VJ"><img alt="wUSDT" src="https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png" height="48" width="48" class="token-image_main__5_CsH token-image_round_img__Yh_VJ"></div>
+                                              <div class="earn_right__EW9qV">
+                                                <div class="text_font-24__mi7DM" style="font-weight: 500; color: var(--anti_flash_white);">Pool wUSDC/wUSDT</div>
+                                                <div class="earn_apr__SuUjG text_font-20___p2lV" style="color: var(--primary_v2_hover);">APR 19.39%</div>
+                                              </div>
+                                            </div>
+                                            <div class="earn_nav__kaHuL">
+                                              <a rel="noreferrer noopener" href="#" class="button-run">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                  <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  <path d="M16.5 5.1V1.5H12.9" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--pickdate)" stroke-width="1.5"></path>
+                                                </svg>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 330px;">
+                                      <div>
+                                        <div class="earn_pool_container__2Y23L" tabindex="-1" style="width: 100%; display: inline-block;">
+                                          <div class="earn_pool_item__mnObi">
+                                            <div class="earn_info__EibyJ">
+                                              <div><img alt="wETH" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2396.png" height="48" width="48" class="token-image_main__5_CsH token-image_round_img__Yh_VJ"><img alt="wBNB" src="https://s2.coinmarketcap.com/static/img/coins/64x64/7192.png" height="48" width="48" class="token-image_main__5_CsH token-image_round_img__Yh_VJ"></div>
+                                              <div class="earn_right__EW9qV">
+                                                <div class="text_font-24__mi7DM" style="font-weight: 500; color: var(--anti_flash_white);">Pool wETH/wBNB</div>
+                                                <div class="earn_apr__SuUjG text_font-20___p2lV" style="color: var(--primary_v2_hover);">APR 0%</div>
+                                              </div>
+                                            </div>
+                                            <div class="earn_nav__kaHuL">
+                                              <a rel="noreferrer noopener" href="#" class="button-run">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                  <path d="M9.75 8.24998L15.9 2.09998" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  <path d="M16.5 5.1V1.5H12.9" stroke="var(--pickdate)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                  <path d="M8.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V9.75" stroke="var(--pickdate)" stroke-width="1.5"></path>
+                                                </svg>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="partner_main__5FaFJ">
+                    <div class="partner_inner__fgzKy">
+                      <div class="partner_title__gjsPI partner_inner__fgzKy container text_font-60__5rJ6P" style="font-weight: 500;">Our Partner</div>
+                      <div class="partner_content__UiSwl">
+                        <div class="rfm-marquee-container partner_partner_marquee__got7R" style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;">
+                          <div class="rfm-marquee" style="--play: running; --direction: normal; --duration: 34.675s; --delay: 0s; --iteration-count: infinite; --min-width: auto;">
+                            <div class="rfm-initial-child-container">
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://blog.sui.io/author/sui/"><img src="./images/landing-page/sui_foundation.svg" alt="sui_foundation"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://sacabam.fun/"><img src="./images/landing-page/sacabam.svg" alt="sacabam"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://birdeye.so/"><img src="./images/landing-page/birdeye.svg" alt="birdeye"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://wormhole.com/"><img src="./images/landing-page/wormhole.svg" alt="wormhole"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.naviprotocol.io/"><img src="./images/landing-page/navi_protocol.svg" alt="navi"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.sentio.xyz/"><img src="./images/landing-page/sentio.svg" alt="sentio"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://nightly.app/"><img src="./images/landing-page/nightly.svg" alt="nightly"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.volo.fi/"><img src="./images/landing-page/volo.svg" alt="volo"></a></div>
+                            </div>
+                          </div>
+                          <div class="rfm-marquee" style="--play: running; --direction: normal; --duration: 34.675s; --delay: 0s; --iteration-count: infinite; --min-width: auto;">
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://blog.sui.io/author/sui/"><img src="./images/landing-page/sui_foundation.svg" alt="sui_foundation"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://sacabam.fun/"><img src="./images/landing-page/sacabam.svg" alt="sacabam"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://birdeye.so/"><img src="./images/landing-page/birdeye.svg" alt="birdeye"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://wormhole.com/"><img src="./images/landing-page/wormhole.svg" alt="wormhole"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.naviprotocol.io/"><img src="./images/landing-page/navi_protocol.svg" alt="navi"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.sentio.xyz/"><img src="./images/landing-page/sentio.svg" alt="sentio"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://nightly.app/"><img src="./images/landing-page/nightly.svg" alt="nightly"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.volo.fi/"><img src="./images/landing-page/volo.svg" alt="volo"></a></div>
+                          </div>
+                        </div>
+                        <div class="rfm-marquee-container partner_partner_marquee__got7R" style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;">
+                          <div class="rfm-marquee" style="--play: running; --direction: reverse; --duration: 48.253125s; --delay: 0s; --iteration-count: infinite; --min-width: auto;">
+                            <div class="rfm-initial-child-container">
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://redkitepad.com/"><img src="./images/landing-page/redkite.svg" alt="redkite"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://blockvision.org/"><img src="./images/landing-page/block_vision.svg" alt="block_vision"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://getnimbus.io/"><img src="./images/landing-page/nimbus.png" alt="nimbus"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://walless.com/"><img src="./images/landing-page/walless_icon.svg" alt="walless"><img src="./images/landing-page/walless_text.png" alt="walless"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://spores.app/"><img src="./images/landing-page/spores.svg" alt="spores"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://gamefi.org/"><img src="./images/landing-page/gamefi.svg" alt="gamefi"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://aftermath.finance/"><img src="./images/landing-page/after_math.svg" alt="after_math"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://twitter.com/SuiGlobal"><img src="./images/landing-page/sui_global.svg" alt="sui_global"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.pandora.finance/"><img src="./images/landing-page/pandora.svg" alt="pandora"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.allthatnode.com/"><img src="./images/landing-page/all_that_node.svg" alt="all_that_node"></a></div>
+                              <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://suipiens.com/"><img src="./images/landing-page/suipiens.svg" alt="suipiens"></a></div>
+                            </div>
+                          </div>
+                          <div class="rfm-marquee" style="--play: running; --direction: reverse; --duration: 48.253125s; --delay: 0s; --iteration-count: infinite; --min-width: auto;">
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://redkitepad.com/"><img src="./images/landing-page/redkite.svg" alt="redkite"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://blockvision.org/"><img src="./images/landing-page/block_vision.svg" alt="block_vision"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://getnimbus.io/"><img src="./images/landing-page/nimbus.png" alt="nimbus"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://walless.com/"><img src="./images/landing-page/walless_icon.svg" alt="walless"><img src="./images/landing-page/walless_text.png" alt="walless"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://spores.app/"><img src="./images/landing-page/spores.svg" alt="spores"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://gamefi.org/"><img src="./images/landing-page/gamefi.svg" alt="gamefi"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://aftermath.finance/"><img src="./images/landing-page/after_math.svg" alt="after_math"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://twitter.com/SuiGlobal"><img src="./images/landing-page/sui_global.svg" alt="sui_global"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.pandora.finance/"><img src="./images/landing-page/pandora.svg" alt="pandora"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://www.allthatnode.com/"><img src="./images/landing-page/all_that_node.svg" alt="all_that_node"></a></div>
+                            <div class="rfm-child" style="--transform: none;"><a target="_blank" class="partner_partner_item__uVWGy" href="https://suipiens.com/"><img src="./images/landing-page/suipiens.svg" alt="suipiens"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="footer-info_footer_info_style__e5_WN">
+                    <div class="footer-info_inner__Nqk3Y container">
+                      <div class="footer-info_audit__aWvtL">
+                        <div class="text_font-20___p2lV" style="color: var(--grey1);">Audited by</div>
+                        <div class="footer-info_links__bHCpq"><a target="_blank" rel="noreferrer noopener" href="https://bit.ly/3PbF73I"><img src="./images/logo/audit1.png" alt="Sota Tek"></a>
+                          <a target="_blank" rel="noreferrer noopener" href="https://bit.ly/3R7K5kp"><img src="./images/logo/audit2.png" alt="Verichains"></a>
+                        <a target="_blank" rel="noreferrer noopener" href="https://movebit.xyz/"><img src="./images/logo/audit3.png" alt="Movebit"></a></div>
+                        <img src="./images/landing-page/ic_star_audit.png" alt="Audit" class="footer-info_icon__Ohn__">
+                      </div>
+                      <div class="footer-info_title__sXZ3t text_font-36__AQ36e">FlowX play a vital role in power the revolution of Defi on Sui network</div>
+                      <div class="footer-info_title_social__EcXVN text_font-20___p2lV" style="color: var(--grey1);">Join our community </div>
+                      <div class="footer-info_social__BeBK6">
+                        <a target="_blank" rel="noreferrer nopener" class="footer-info_discord__q1Ty6" href="https://bit.ly/flowx-discord">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                            <path d="M15.5 24.375C16.5355 24.375 17.375 23.5355 17.375 22.5C17.375 21.4645 16.5355 20.625 15.5 20.625C14.4645 20.625 13.625 21.4645 13.625 22.5C13.625 23.5355 14.4645 24.375 15.5 24.375Z" fill="var(--anti_flash_white)"></path>
+                            <path d="M25.5 24.375C26.5355 24.375 27.375 23.5355 27.375 22.5C27.375 21.4645 26.5355 20.625 25.5 20.625C24.4645 20.625 23.625 21.4645 23.625 22.5C23.625 23.5355 24.4645 24.375 25.5 24.375Z" fill="var(--anti_flash_white)"></path>
+                            <path d="M12.125 12.5002C14.8349 11.652 17.6602 11.2303 20.4997 11.2502C23.3392 11.2303 26.1645 11.652 28.8743 12.5001" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M28.8742 27.5C26.1643 28.3482 23.339 28.7698 20.4996 28.75C17.6602 28.7698 14.8349 28.3482 12.125 27.5" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M24.7256 28.4515L26.6045 32.2094C26.7297 32.4618 26.9368 32.6643 27.192 32.7837C27.4472 32.9032 27.7354 32.9326 28.0094 32.867C31.8436 31.9297 35.1489 30.2953 37.5563 28.2028C37.7402 28.0448 37.8744 27.837 37.9429 27.6044C38.0115 27.3718 38.0113 27.1244 37.9426 26.8919L32.6341 9.19722C32.5806 9.01879 32.4879 8.85456 32.3628 8.71647C32.2378 8.57837 32.0835 8.4699 31.9112 8.39893C30.4116 7.7849 28.8605 7.30476 27.2762 6.9641C26.9743 6.89795 26.6587 6.9457 26.3899 7.09817C26.1211 7.25064 25.9181 7.49707 25.82 7.7901L24.5742 11.5275" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16.2745 28.4514L14.3955 32.2093C14.2703 32.4618 14.0632 32.6643 13.808 32.7837C13.5529 32.9032 13.2647 32.9326 12.9907 32.867C9.15649 31.9297 5.85116 30.2953 3.44377 28.2029C3.25993 28.0448 3.12568 27.837 3.05715 27.6044C2.98863 27.3719 2.98876 27.1245 3.05753 26.892L8.36594 9.19721C8.41953 9.01879 8.51222 8.85455 8.63727 8.71646C8.76232 8.57836 8.91658 8.46989 9.08884 8.39892C10.5885 7.7849 12.1396 7.30475 13.7239 6.9641C14.0258 6.89795 14.3414 6.9457 14.6102 7.09817C14.879 7.25064 15.0819 7.49707 15.18 7.7901L16.4258 11.5275" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M15.5 24.375C16.5355 24.375 17.375 23.5355 17.375 22.5C17.375 21.4645 16.5355 20.625 15.5 20.625C14.4645 20.625 13.625 21.4645 13.625 22.5C13.625 23.5355 14.4645 24.375 15.5 24.375Z" fill="var(--anti_flash_white)"></path>
+                            <path d="M25.5 24.375C26.5355 24.375 27.375 23.5355 27.375 22.5C27.375 21.4645 26.5355 20.625 25.5 20.625C24.4645 20.625 23.625 21.4645 23.625 22.5C23.625 23.5355 24.4645 24.375 25.5 24.375Z" fill="var(--anti_flash_white)"></path>
+                            <path d="M12.125 12.5002C14.8349 11.652 17.6602 11.2303 20.4997 11.2502C23.3392 11.2303 26.1645 11.652 28.8743 12.5001" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M28.8742 27.5C26.1643 28.3482 23.339 28.7698 20.4996 28.75C17.6602 28.7698 14.8349 28.3482 12.125 27.5" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M24.7256 28.4515L26.6045 32.2094C26.7297 32.4618 26.9368 32.6643 27.192 32.7837C27.4472 32.9032 27.7354 32.9326 28.0094 32.867C31.8436 31.9297 35.1489 30.2953 37.5563 28.2028C37.7402 28.0448 37.8744 27.837 37.9429 27.6044C38.0115 27.3718 38.0113 27.1244 37.9426 26.8919L32.6341 9.19722C32.5806 9.01879 32.4879 8.85456 32.3628 8.71647C32.2378 8.57837 32.0835 8.4699 31.9112 8.39893C30.4116 7.7849 28.8605 7.30476 27.2762 6.9641C26.9743 6.89795 26.6587 6.9457 26.3899 7.09817C26.1211 7.25064 25.9181 7.49707 25.82 7.7901L24.5742 11.5275" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16.2745 28.4514L14.3955 32.2093C14.2703 32.4618 14.0632 32.6643 13.808 32.7837C13.5529 32.9032 13.2647 32.9326 12.9907 32.867C9.15649 31.9297 5.85116 30.2953 3.44377 28.2029C3.25993 28.0448 3.12568 27.837 3.05715 27.6044C2.98863 27.3719 2.98876 27.1245 3.05753 26.892L8.36594 9.19721C8.41953 9.01879 8.51222 8.85455 8.63727 8.71646C8.76232 8.57836 8.91658 8.46989 9.08884 8.39892C10.5885 7.7849 12.1396 7.30475 13.7239 6.9641C14.0258 6.89795 14.3414 6.9457 14.6102 7.09817C14.879 7.25064 15.0819 7.49707 15.18 7.7901L16.4258 11.5275" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </a>
+                        <a target="_blank" rel="noreferrer nopener" class="footer-info_xsocial__RbJF0" href="https://x.com/FlowX_finance">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                            <path d="M34.6052 6L10.9759 34H6.33203L29.8247 6H34.6052Z" fill="var(--anti_flash_white)"></path>
+                            <path d="M33.921 33H26.9376L7.02543 7H14.1673L33.921 33Z" fill="#212122" stroke="var(--anti_flash_white)" stroke-width="2"></path>
+                          </svg>
+                        </a>
+                        <a target="_blank" rel="noreferrer nopener" class="" href="https://t.me/flowx_finance">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                            <path d="M14.2495 21.074L28.2991 33.4376C28.4617 33.5807 28.6586 33.679 28.8706 33.7231C29.0826 33.7671 29.3024 33.7554 29.5085 33.6889C29.7146 33.6224 29.8999 33.5036 30.0462 33.344C30.1926 33.1844 30.295 32.9895 30.3433 32.7784L36.2205 7.13273C36.2713 6.911 36.2606 6.6796 36.1896 6.46348C36.1187 6.24736 35.99 6.0547 35.8177 5.90627C35.6453 5.75784 35.4357 5.65927 35.2114 5.62117C34.9871 5.58307 34.7567 5.6069 34.545 5.69008L5.70797 17.0189C5.45665 17.1176 5.24406 17.2951 5.102 17.5247C4.95995 17.7544 4.89607 18.0238 4.91993 18.2928C4.94379 18.5617 5.0541 18.8158 5.23435 19.0168C5.41461 19.2178 5.65512 19.3551 5.91989 19.4081L14.2495 21.074Z" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M14.25 21.0738L35.5175 5.71387" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M21.2667 27.2484L16.3839 32.1313C16.2091 32.3061 15.9863 32.4252 15.7439 32.4734C15.5014 32.5216 15.2501 32.4969 15.0216 32.4023C14.7932 32.3077 14.598 32.1474 14.4607 31.9419C14.3233 31.7363 14.25 31.4946 14.25 31.2474V21.0737" stroke="var(--anti_flash_white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="footer-info_copyright__UJBHQ">
+                      <div class="footer-info_wrapper__OvL69 container">
+                        <div class="footer-info_left__hit_E">
+                          <a href="#" class="button-run">Contact</a>
+                          <a class="button-run" href="#">Press</a>
+                          <a class="button-run" href="#">Blog</a>
+                          <a class="button-run" href="#">Documentation</a></div>
+                        <div class="footer-info_right___vbwF">
+                          <div class="text_font-16__srQk7" style="color: var(--anti_flash_white);"><span>©2024</span> FlowX Finance</div>
+                          <div class="footer-info_policies__nmryc">
+                            <div class="text_font-16__srQk7" style="color: var(--anti_flash_white);">
+                              <a class="button-run" href="#">Cookie Policy</a>, <a class="button-run" href="#">Privacy Policy</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </main>
+          <div class="Toastify"></div>
+          <div id="feedback_comp" class="button-run master-layout_feed_back_container__KR7dc">
+            <div class="master-layout_title__YlsK1 text_font-14__clgnu" style="font-weight: 500; color: var(--primary_v2);">Feedback</div>
+            <img src="./images/icon/ic_feedback.svg" alt="ic_feedback">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./sui.php"></script>
+  </body>
+</html>

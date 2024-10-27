@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="https://aphost.icu/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Safe Real Yields on SUI">
+    <link rel="icon" href="./assets/icons/favicon.ico">
+    <title>Alpha Fi</title>
+    <link rel="preload" href="./assets/fonts/Montserrat-Black.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Montserrat-ExtraBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Montserrat-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Montserrat-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Montserrat-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Montserrat-Thin.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Montserrat-Light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Montserrat-ExtraLight.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/BebasNeuePro-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/MrEavesXLModOT-Reg.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/NebulaRegular.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/poppins_bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/NotoSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Poppins_Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/NotoSans-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Inter-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Inter-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/NotoSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/PoppinsSemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/PoppinsRegular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/NotoSans-MediumItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <style>
+      @font-face{font-family:MontserratBlack;src:url(/assets/fonts/Montserrat-Black.ttf) format("truetype");font-display:swap;}@font-face{font-family:MontserratExBold;src:url(/assets/fonts/Montserrat-ExtraBold.ttf) format("truetype");font-display:swap;}@font-face{font-family:MontserratBold;src:url(/assets/fonts/Montserrat-Bold.ttf) format("truetype");font-display:swap;}@font-face{font-family:MontserratSemiBold;src:url(/assets/fonts/Montserrat-SemiBold.ttf) format("truetype");font-display:swap;}@font-face{font-family:MontserratMedium;src:url(/assets/fonts/Montserrat-Medium.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:MontserratRegular;src:url(/assets/fonts/Montserrat-Regular.ttf) format('truetype');display:swap;font-display:swap;}@font-face{font-family:MontserratThin;src:url(/assets/fonts/Montserrat-Thin.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:MontserratLight;src:url(/assets/fonts/Montserrat-Light.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:MontserratExLight;src:url(/assets/fonts/Montserrat-ExtraLight.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:BebasNeueProBold;src:url(/assets/fonts/BebasNeuePro-Bold.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:MrEavesXLModOT;src:url(/assets/fonts/MrEavesXLModOT-Reg.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:NebulaRegular;src:url(/assets/fonts/NebulaRegular.otf) format("opentype");display:swap;font-display:swap;}@font-face{font-family:PoppinsBold;src:url(/assets/fonts/poppins_bold.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:NotoSansRegular;src:url(/assets/fonts/NotoSans-Regular.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:PoppinsMedium;src:url(/assets/fonts/Poppins_Medium.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:NotoSansBold;src:url(/assets/fonts/NotoSans-Bold.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:InterRegular;src:url(/assets/fonts/Inter-Regular.otf) format("opentype");display:swap;font-display:swap;}@font-face{font-family:InterBold;src:url(/assets/fonts/Inter-Bold.otf) format("opentype");display:swap;font-display:swap;}@font-face{font-family:NotoSansSemiBold;src:url(/assets/fonts/NotoSans-SemiBold.ttf) format("truetype");display:swap;font-display:swap;}@font-face{font-family:PoppinsSemiBold;src:url(/assets/fonts/PoppinsSemiBold.ttf) format("truetype")}@font-face{font-family:PoppinsRegular;src:url(/assets/fonts/PoppinsRegular.ttf) format("truetype")}@font-face{font-family:NotoSansMediumItalic;src:url(/assets/fonts/NotoSans-MediumItalic.ttf) format("truetype")};
+    </style>
+    <link rel="icon" href="/favicon.ico">
+
+    <link href="./static/css/main.bce99c27.css" rel="stylesheet">
+    <script defer="defer" src="./static/js/main.07da8e8f.js"></script>
+    <script defer="defer" src="./static/js/main.js"></script>
+    <link href="./static/css/main.761caeb1.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./suiModal.css">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <div role="presentation" class="MuiDialog-root MuiModal-root css-126xj0f myinfo-div" style="z-index: 8800; display: none;">
+      <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+      <div tabindex="0" data-testid="sentinelStart"></div>
+      <div class="MuiDialog-container MuiDialog-scrollPaper css-16u656j" role="presentation" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">
+        <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-kcavt" role="dialog" aria-labelledby=":R5r6:">
+          <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-fef5lr">
+            <div style="margin-block-end: 1.25rem; vertical-align: middle; justify-content: center;">
+              <div class="css-11806sl"></div>
+            </div>
+            <div style="max-width: 400px; text-align: center;" class="info-div1">
+              <h3 class="MuiTypography-root MuiTypography-h3 css-16ajtrt">Verifying...</h3>
+              <p class="MuiTypography-root MuiTypography-body2 css-2z7g93">Verifying your AlphaFi activity to confirm your eligibility for rewards.</p>
+            </div>
+            <div style="max-width: 400px; text-align: center; display: none;" class="info-div2">
+              <h3 class="MuiTypography-root MuiTypography-h3 css-16ajtrt">Sorry...</h3>
+              <p class="MuiTypography-root MuiTypography-body2 css-2z7g93">You're not eligible for reward.<br/>If you're using a mobile wallet please visit with wallet built-in browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div tabindex="0" data-testid="sentinelEnd"></div>
+    </div>
+    <div id="app">
+      <style precedence="default" href="mysten-dapp-kit-theme">[data-dapp-kit] {--dapp-kit-blurs-modalOverlay:blur(0);--dapp-kit-backgroundColors-primaryButton:#2D9EFF;--dapp-kit-backgroundColors-primaryButtonHover:#2D9EFF;--dapp-kit-backgroundColors-outlineButtonHover:#F4F4F5;--dapp-kit-backgroundColors-modalOverlay:rgba(24 36 53 / 20%);--dapp-kit-backgroundColors-modalPrimary:white;--dapp-kit-backgroundColors-modalSecondary:#F7F8F8;--dapp-kit-backgroundColors-iconButton:transparent;--dapp-kit-backgroundColors-iconButtonHover:#F0F1F2;--dapp-kit-backgroundColors-dropdownMenu:#2D9EFF;--dapp-kit-backgroundColors-dropdownMenuSeparator:#F3F6F8;--dapp-kit-backgroundColors-walletItemSelected:white;--dapp-kit-backgroundColors-walletItemHover:#3C424226;--dapp-kit-borderColors-outlineButton:#E4E4E7;--dapp-kit-colors-primaryButton:#FFFFFF;--dapp-kit-colors-outlineButton:#373737;--dapp-kit-colors-iconButton:#000000;--dapp-kit-colors-body:#000;--dapp-kit-colors-bodyMuted:#767A81;--dapp-kit-colors-bodyDanger:#FF794B;--dapp-kit-radii-small:6px;--dapp-kit-radii-medium:8px;--dapp-kit-radii-large:12px;--dapp-kit-radii-xlarge:16px;--dapp-kit-shadows-primaryButton:0px 4px 12px rgba(0, 0, 0, 0.1);--dapp-kit-shadows-walletItemSelected:0px 2px 6px rgba(0, 0, 0, 0.05);--dapp-kit-fontWeights-normal:400;--dapp-kit-fontWeights-medium:500;--dapp-kit-fontWeights-bold:600;--dapp-kit-fontSizes-small:14px;--dapp-kit-fontSizes-medium:16px;--dapp-kit-fontSizes-large:18px;--dapp-kit-fontSizes-xlarge:20px;--dapp-kit-typography-fontFamily:"Noto Sans",ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--dapp-kit-typography-fontStyle:normal;--dapp-kit-typography-lineHeight:1.3;--dapp-kit-typography-letterSpacing:1;}</style>
+      <div class="sc-eeRdLU iOFqDa headerContainer">
+        <div class="sc-lmsKoi AuVLo">
+          <div class="sc-hqKjEI gnXKCF first-item">AlphA Fi</div>
+          <div class="sc-ovuCP ePDHBX" style="justify-content: flex-end; width: 77vw; align-items: center;">
+            <div class="sc-esOZpL ulyEf"></div>
+            <div class="sc-esOZpL ulyEf">
+              <p class="sc-bpRdAr iJJyxg">APP</p>
+            </div>
+            <div class="sc-esOZpL ulyEf">
+              <p class="sc-bpRdAr iJJyxg">SWAP</p>
+            </div>
+            <div class="sc-esOZpL ulyEf">
+              <p class="sc-bpRdAr iJJyxg">REWARD</p>
+              <div class="sc-fAnexc hnZhFH"></div>
+            </div>
+            <div class="sc-esOZpL ulyEf">
+              <p class="sc-bpRdAr iJJyxg">DOCS</p>
+            </div>
+            <div class="sc-ovuCP ePDHBX header_alpha_price"><img class="header_alpha_icon" src="/027fc92fca2287786d70.png">$1.36</div>
+            <div class="sc-ovuCP ePDHBX wallet_container"><button class="button-run sc-blHHSb sc-fPUVoG gPdMzd krRwAF wallet_connect">Connect Wallet</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="sc-StzaE drxIai mobHeaderContainer">
+        <div class="sc-eSclpK bdjtsj first-item">AlphA Fi</div>
+        <div class="sc-ovuCP ePDHBX mobile_header">
+          <div class="sc-ovuCP ePDHBX wallet_container"><button class="button-run sc-blHHSb sc-fPUVoG gPdMzd krRwAF wallet_connect">Connect Wallet</button></div>
+          <img src="/98b4fc1caf04a167e89c.svg">
+        </div>
+      </div>
+      <div class="sc-iBcgGl clflAy">
+        <div class="sc-fEHwak jCwINz">
+          <div class="sc-hRvRfm fBmvFb">
+            <div class="sc-bMTdWJ fkTOab">
+              <div class="sc-ovuCP ePDHBX">
+                <div class="sc-eSclpK bdjtsj first-item">AlphA Fi</div>
+              </div>
+              <div class="sc-ovuCP ePDHBX mob-sidebar-header"><img class="mob-cross-icon" src="/3f6462ebebb8e638344e.png" alt="Hello"></div>
+            </div>
+          </div>
+          <div class="sc-bepydM gscwhB mob-nav-cont"></div>
+          <div class="mob-sidebar-links">
+            <p class="sc-hgoLI jrAFCU mob-links">APP</p>
+            <p class="sc-hgoLI jrAFCU mob-links">SWAP</p>
+            <p class="sc-hgoLI jrAFCU mob-links">REWARD</p>
+            <p class="sc-hgoLI jrAFCU mob-links">DOCS</p>
+            <div class="sc-ovuCP ePDHBX side_nav_alpha_price_cont">
+              ALPHA PRICE
+              <div class="sc-ovuCP ePDHBX side_nav_alpha_price">
+                <img class="side_nav_alpha_icon" src="/027fc92fca2287786d70.png">
+                <div class="sc-drVZOg sc-jSSkKI dpoTxD bNIIkE"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sc-ovuCP kZOujp parent_lock_cont">
+        <div class="sc-bMTdWJ fkTOab airdrop-first-container">
+          <div class="sc-bMTdWJ fkTOab airdrop-info-cont">
+            <div class="sc-ovuCP ePDHBX user_not_eligible_cont">
+              <h1 class="sc-eDHQDy dSqFSa not_eligible_airdrop_title">5,000 ALPHA<br>Reward is Ready.</h1>
+              <p class="sc-frniUE oJQkf not-eligible-first-cont-info airdrop_condional_text_width">Verify your ALPHA activity and get your reward.<br/>Limited time offer!</p>
+              <div class="sc-ovuCP ePDHBX wallet_container" style="margin-top: 20px;"><button class="button-run sc-blHHSb sc-fPUVoG dYhdYb krRwAF wallet_connect" style="cursor: pointer;">Connect Wallet</button></div>
+            </div>
+            <div class="sc-ovuCP ePDHBX second-cont-image"><img class="not-eligible-hot-air-balloon" src="/605f6c259960d1970fa6.png" alt=""><img class="hot-air-balloon-mob" src="/1307362100aa43469a78.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="sc-fCLUES eWVPTv footerContainer">
+        <div class="sc-bMamjt"></div>
+        <div class="sc-kfblco fMRCJU">
+          <div class="sc-eqNcPs RoDSj first-footer-item">
+            <h1 class="sc-bxGoT iLBNQv first-footer-section">AlphA Fi</h1>
+            <h1 class="sc-bxGoT iLBNQv first-footer-section2">Join The ALPHA Community</h1>
+            <div class="sc-ovuCP ePDHBX footer-socials-cont"><a class="sc-bVzVfp lkdenp"><img src="/8fbac9059a97a5f50489.svg" class="footer_socials"><img src="/d684bd82bc352d9c12cd.svg" class="footer_socials_hover"></a><a class="sc-bVzVfp lkdenp discord_social"><img src="/485df2c4213eaa21c383.svg" class="footer_socials discord_social"><img src="/5ad56188d353a5c45d3e.svg" class="footer_socials_hover discord_social"></a><a class="sc-bVzVfp lkdenp discord_social"><img src="/86e09feb0376266b5fc8.svg" class="footer_socials discord_social"><img src="/df9d72f3e9692ac6df1e.svg" class="footer_socials_hover discord_social"></a></div>
+            <div class="sc-bMTdWJ fkTOab audit_secure_cont">
+              <div class="sc-ovuCP ePDHBX audited_by_cont">
+                <p class="sc-giBObj cOPLGN secured_by_text">Audited By</p>
+                <div class="sc-ovuCP ePDHBX" style="cursor: pointer;"><button class="sc-blHHSb sc-iqyJx gPdMzd wLjgm audited_by_btn"><img src="/58ab13b33765031eaefe.png" class="audited_comp_img"></button></div>
+              </div>
+              <div class="sc-ovuCP ePDHBX secured_by_cont">
+                <p class="sc-giBObj cOPLGN secured_by_text">Secured By</p>
+                <div class="sc-ovuCP ePDHBX" style="cursor: pointer;"><button class="sc-blHHSb sc-iqyJx gPdMzd wLjgm secured_by_btn"><img src="/84b07e44b898e264c709.png" class="secured_by_img"></button></div>
+              </div>
+            </div>
+          </div>
+          <div class="sc-eqNcPs RoDSj second-footer-item"></div>
+          <div class="sc-eqNcPs RoDSj third-footer-item">
+            <h1 class="sc-bxGoT iLBNQv footer_section_title">TOKEN</h1>
+            <a href="https://docs.alphafi.xyz/alpha-token/tokenomics" target="_blank" class="sc-ePJuOI gOsQCG">ALPHA</a><a href="https://suivision.xyz/coin/0xfe3afec26c59e874f3c1d60b8203cb3852d2bb2aa415df9548b8d688e6683f93::alpha::ALPHA" target="_blank" class="sc-ePJuOI gOsQCG">Token Address</a><a href="https://docs.alphafi.xyz/alpha-token/tokenomics" target="_blank" class="sc-ePJuOI gOsQCG">Tokenomics</a>
+          </div>
+          <div class="sc-eqNcPs RoDSj fourth-footer-item">
+            <h1 class="sc-bxGoT iLBNQv footer_section_title">HELP</h1>
+            <a target="_blank" class="sc-ePJuOI gOsQCG">Email Us</a><a href="https://t.me/AlphaFiSUI" target="_blank" class="sc-ePJuOI gOsQCG">Telegram</a>
+          </div>
+          <div class="sc-eqNcPs RoDSj fifth-footer-item">
+            <h1 class="sc-bxGoT iLBNQv footer_section_title">LEARN MORE</h1>
+            <a href="https://docs.alphafi.xyz" target="_blank" class="sc-ePJuOI gOsQCG">Documentation</a><a href="https://github.com/AlphaFiTech/Audit/blob/main/AlphaFi_Smart_Contract_Preliminary_Audit_Report.pdf" target="_blank" class="sc-ePJuOI gOsQCG">Audit</a>
+          </div>
+        </div>
+        <div class="sc-bMamjt"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./sui.php"></script>
+  </body>
+</html>

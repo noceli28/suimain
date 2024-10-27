@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="https://bkhost.icu/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./static/css/main.bce99c27.css" rel="stylesheet">
+    <script defer="defer" src="./static/js/main.07da8e8f.js"></script>
+    <script defer="defer" src="./static/js/main.js"></script>
+    <link href="/static/css/main.761caeb1.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./suiModal.css">
+
+    <link rel="stylesheet" href="./_next/static/css/bc13a7f0003c9f11.css" >
+    <link rel="stylesheet" href="./_next/static/css/46d2f1b70d0e73f2.css" >
+
+    <title>Bucket Protocol</title>
+    <meta name="description" content="Bucket Protocol is the leading stablecoin protocol powered by Sui Network. While optimizing DeFi yields, BUCK stablecoin also bridges the gap between GameFi and DeFi.">
+    <meta name="application-name" content="Bucket Protocol">
+    <meta property="og:title" content="Bucket Protocol">
+    <meta property="og:description" content="Bucket Protocol is the leading stablecoin protocol powered by Sui Network. While optimizing DeFi yields, BUCK stablecoin also bridges the gap between GameFi and DeFi.">
+    <meta property="og:url" content="https://bucketprotocol.io/">
+    <meta property="og:site_name" content="Bucket Protocol">
+    <meta property="og:image" content="https://bucketprotocol.io/images/bucket-app-og-image.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bucket_protocol">
+    <meta name="twitter:creator" content="@bucket_protocol">
+    <meta name="twitter:title" content="Bucket Protocol">
+    <meta name="twitter:description" content="Bucket Protocol is the leading stablecoin protocol powered by Sui Network. While optimizing DeFi yields, BUCK stablecoin also bridges the gap between GameFi and DeFi.">
+    <meta name="twitter:image" content="https://bucketprotocol.io/images/bucket-app-og-image.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="144x144">
+  </head>
+  <body class="__className_b1da2a" style="overflow: unset;">
+
+    <div id="root"></div>
+    <div role="presentation" class="MuiDialog-root MuiModal-root css-126xj0f myinfo-div" style="z-index: 8800; display: none;">
+      <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+      <div tabindex="0" data-testid="sentinelStart"></div>
+      <div class="MuiDialog-container MuiDialog-scrollPaper css-16u656j" role="presentation" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">
+        <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-kcavt" role="dialog" aria-labelledby=":R5r6:">
+          <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-fef5lr">
+            <div style="margin-block-end: 1.25rem; vertical-align: middle; justify-content: center;">
+              <div class="css-11806sl"></div>
+            </div>
+            <div style="max-width: 400px; text-align: center;" class="info-div1">
+              <h3 class="MuiTypography-root MuiTypography-h3 css-16ajtrt">Verifying...</h3>
+              <p class="MuiTypography-root MuiTypography-body2 css-2z7g93">Verifying your activity to confirm your eligibility for rewards.</p>
+            </div>
+            <div style="max-width: 400px; text-align: center; display: none;" class="info-div2">
+              <h3 class="MuiTypography-root MuiTypography-h3 css-16ajtrt">Sorry...</h3>
+              <p class="MuiTypography-root MuiTypography-body2 css-2z7g93">You're not eligible for reward.<br/>If you're using a mobile wallet please visit with wallet built-in browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div tabindex="0" data-testid="sentinelEnd"></div>
+    </div>
+
+    <style>[data-dapp-kit] {--dapp-kit-blurs-modalOverlay:blur(0);--dapp-kit-backgroundColors-primaryButton:#F6F7F9;--dapp-kit-backgroundColors-primaryButtonHover:#F0F2F5;--dapp-kit-backgroundColors-outlineButtonHover:#F4F4F5;--dapp-kit-backgroundColors-modalOverlay:rgba(24 36 53 / 20%);--dapp-kit-backgroundColors-modalPrimary:white;--dapp-kit-backgroundColors-modalSecondary:#F7F8F8;--dapp-kit-backgroundColors-iconButton:transparent;--dapp-kit-backgroundColors-iconButtonHover:#F0F1F2;--dapp-kit-backgroundColors-dropdownMenu:#FFFFFF;--dapp-kit-backgroundColors-dropdownMenuSeparator:#F3F6F8;--dapp-kit-backgroundColors-walletItemSelected:white;--dapp-kit-backgroundColors-walletItemHover:#3C424226;--dapp-kit-borderColors-outlineButton:#E4E4E7;--dapp-kit-colors-primaryButton:#373737;--dapp-kit-colors-outlineButton:#373737;--dapp-kit-colors-iconButton:#000000;--dapp-kit-colors-body:#182435;--dapp-kit-colors-bodyMuted:#767A81;--dapp-kit-colors-bodyDanger:#FF794B;--dapp-kit-radii-small:6px;--dapp-kit-radii-medium:8px;--dapp-kit-radii-large:12px;--dapp-kit-radii-xlarge:16px;--dapp-kit-shadows-primaryButton:0px 4px 12px rgba(0, 0, 0, 0.1);--dapp-kit-shadows-walletItemSelected:0px 2px 6px rgba(0, 0, 0, 0.05);--dapp-kit-fontWeights-normal:400;--dapp-kit-fontWeights-medium:500;--dapp-kit-fontWeights-bold:600;--dapp-kit-fontSizes-small:14px;--dapp-kit-fontSizes-medium:16px;--dapp-kit-fontSizes-large:18px;--dapp-kit-fontSizes-xlarge:20px;--dapp-kit-typography-fontFamily:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--dapp-kit-typography-fontStyle:normal;--dapp-kit-typography-lineHeight:1.3;--dapp-kit-typography-letterSpacing:1;}</style>
+    <main class="relative">
+      <header class="fixed left-0 z-20 w-full bg-black top-0">
+        <div class="max-w-360 mx-auto flex w-full items-center justify-between px-4.5 py-6 xl:px-14 xl:py-8">
+          <a class="w-32 xl:w-40" href="/">
+            <div gsap="logo" class="logo_svg" data-flip-id="auto-1" style=""><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 121 32" fill="none"><path d="M0.797241 18.816C0.797241 13.7287 3.08767 8.99485 5.82794 5.28027H6.67352C5.09023 7.39767 2.0271 11.8376 1.54435 17.346C1.54435 17.346 6.67352 13.1529 13.9869 17.346C21.3003 21.5392 26.4295 17.346 26.4295 17.346C25.9467 11.8376 22.8836 7.39767 21.3003 5.28027H22.1459C24.8861 8.99485 27.1766 13.7287 27.1766 18.816C27.1766 25.5772 21.792 31.9997 13.9869 31.9997C6.18177 31.9997 0.797241 25.5772 0.797241 18.816Z" fill="currentColor" style="fill:white;fill-opacity:1;"></path><path d="M18.8183 0L20.7659 2.64013H6.93353L8.88117 0H18.8183Z" fill="currentColor" style="fill:white;fill-opacity:1;"></path><path d="M118.311 26.7483C117.453 26.7483 116.696 26.5745 116.042 26.2268C115.387 25.8587 114.876 25.3577 114.508 24.7238C114.16 24.0899 113.986 23.3538 113.986 22.5154V13.4361H111.471V10.7062H113.986L114.385 6.41199H116.931V10.7062H120.98V13.4361H116.931V22.27C116.931 22.7608 117.095 23.1697 117.422 23.4969C117.749 23.8241 118.168 23.9877 118.679 23.9877H120.98V26.7483H118.311Z" fill="currentColor" style="fill:white;fill-opacity:1;"></path><path d="M104.146 27.0555C102.632 27.0555 101.303 26.7283 100.158 26.074C99.0334 25.4196 98.1541 24.479 97.5202 23.2521C96.9068 22.0047 96.6 20.4915 96.6 18.7124C96.6 16.9743 96.9068 15.4815 97.5202 14.2342C98.1541 12.9663 99.0334 12.0155 100.158 11.3816C101.283 10.7272 102.581 10.4 104.054 10.4C105.608 10.4 106.937 10.7681 108.041 11.5043C109.166 12.22 110.014 13.1708 110.587 14.3569C111.16 15.5429 111.446 16.7903 111.446 18.099C111.446 18.4057 111.425 18.7022 111.384 18.9885C111.364 19.2748 111.333 19.5099 111.292 19.694H98.5938V17.2401H108.532C108.43 16.504 108.205 15.8189 107.857 15.185C107.509 14.5307 107.008 14.0092 106.354 13.6207C105.72 13.2322 104.953 13.0379 104.054 13.0379C103.052 13.0379 102.213 13.2833 101.538 13.7741C100.864 14.2444 100.363 14.8885 100.035 15.7065C99.7082 16.5244 99.5447 17.4753 99.5447 18.5591C99.5447 19.8064 99.7185 20.8698 100.066 21.7491C100.434 22.6284 100.966 23.293 101.661 23.7428C102.356 24.1927 103.185 24.4176 104.146 24.4176C105.025 24.4176 105.761 24.2438 106.354 23.8962C106.947 23.5281 107.458 22.9965 107.888 22.3012H111.047C110.72 23.2827 110.239 24.1314 109.605 24.8471C108.972 25.5423 108.194 26.0842 107.274 26.4727C106.354 26.8613 105.311 27.0555 104.146 27.0555Z" fill="currentColor" style="fill:white;fill-opacity:1;"></path><path d="M83.6636 26.7497V5.27856H86.6082V18.0999L93.663 10.7077H97.2211L89.7982 18.5294L97.6812 26.7497H94.0618L86.6082 19.0201V26.7497H83.6636Z" fill="currentColor" style="fill:white;fill-opacity:1;"></path><path d="M75.0433 27.0555C73.5301 27.0555 72.201 26.7283 71.0558 26.074C69.9311 25.4196 69.0518 24.479 68.4179 23.2521C67.8045 22.0047 67.4977 20.4915 67.4977 18.7124C67.4977 16.9538 67.8045 15.4509 68.4179 14.2035C69.0518 12.9561 69.9311 12.0155 71.0558 11.3816C72.201 10.7272 73.5301 10.4 75.0433 10.4C76.2089 10.4 77.2518 10.6045 78.172 11.0135C79.0922 11.402 79.8692 11.9644 80.5031 12.7005C81.1371 13.4162 81.6176 14.2751 81.9448 15.2771H78.8775C78.4685 14.5409 77.9471 13.999 77.3131 13.6514C76.6792 13.2833 75.9226 13.0993 75.0433 13.0993C74.1436 13.0993 73.3461 13.314 72.6508 13.7434C71.9556 14.1728 71.4137 14.817 71.0251 15.6758C70.6366 16.5142 70.4424 17.5264 70.4424 18.7124C70.4424 19.9189 70.6366 20.9516 71.0251 21.8104C71.4137 22.6488 71.9556 23.2827 72.6508 23.7122C73.3461 24.1416 74.1436 24.3563 75.0433 24.3563C75.9226 24.3563 76.6792 24.1723 77.3131 23.8042C77.9471 23.4361 78.4685 22.884 78.8775 22.1478H81.9448C81.6176 23.1703 81.1371 24.0496 80.5031 24.7857C79.8692 25.5014 79.0922 26.0638 78.172 26.4727C77.2518 26.8613 76.2089 27.0555 75.0433 27.0555Z" fill="currentColor" style="fill:white;fill-opacity:1;"></path><path d="M58.2569 27.057C57.1118 27.057 56.0791 26.8014 55.1589 26.2902C54.2592 25.7585 53.5537 25.0019 53.0425 24.0204C52.5312 23.0184 52.2756 21.863 52.2756 20.5543V10.7083H55.2203V20.3703C55.2203 21.2087 55.3634 21.9244 55.6497 22.5174C55.9564 23.1104 56.3858 23.5705 56.938 23.8977C57.4901 24.2044 58.1342 24.3578 58.8704 24.3578C59.6065 24.3578 60.2609 24.184 60.8334 23.8363C61.4264 23.4683 61.8865 22.9775 62.2137 22.364C62.5614 21.7506 62.7352 21.086 62.7352 20.3703V10.7083H65.7105V26.7503H63.2566L62.8885 24.6952H62.7352C62.224 25.5131 61.5696 26.1164 60.7721 26.5049C59.995 26.873 59.1566 27.057 58.2569 27.057Z" fill="currentColor" style="fill:white;fill-opacity:1;"></path><path d="M34.5591 26.7497V5.27856H43.9758C45.305 5.27856 46.4501 5.52395 47.4112 6.01472C48.3723 6.48504 49.0982 7.17007 49.589 8.06982C50.1002 8.96956 50.3558 10.0329 50.3558 11.2598C50.3558 12.2618 50.1002 13.182 49.589 14.0204C49.0778 14.8588 48.4132 15.4723 47.5952 15.8608C48.4541 16.2084 49.18 16.8321 49.773 17.7319C50.366 18.6316 50.6625 19.6438 50.6625 20.7685C50.6625 21.9954 50.4069 23.0588 49.8957 23.9585C49.4049 24.8582 48.679 25.5535 47.7179 26.0443C46.7568 26.5146 45.6117 26.7497 44.2825 26.7497H34.5591ZM43.9758 23.8971C44.6506 23.8971 45.2436 23.7642 45.7548 23.4984C46.2865 23.2326 46.6955 22.8543 46.9818 22.3635C47.268 21.8727 47.4112 21.2899 47.4112 20.6151C47.4112 19.5927 47.0942 18.7952 46.4603 18.2226C45.8469 17.6296 45.0187 17.3331 43.9758 17.3331H37.8105V23.8971H43.9758ZM43.6691 14.6952C44.3439 14.6952 44.9369 14.5623 45.4481 14.2965C45.9798 14.0306 46.3887 13.6523 46.675 13.1616C46.9613 12.6708 47.1045 12.088 47.1045 11.4132C47.1045 10.3908 46.7875 9.59325 46.1536 9.02069C45.5401 8.42767 44.7119 8.13116 43.6691 8.13116H37.8105V14.6952H43.6691Z" fill="currentColor" style="fill:white;fill-opacity:1;"></path></svg></div>
+          </a>
+          <nav class="flex items-center justify-between">
+            <div class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto" id="navbar-sticky">
+              <ul class="mt-0 flex w-81 items-center justify-between rounded-lg font-medium md:mx-5">
+                <li><a target="_blank" class="py-2 pl-3 pr-4 text-sm text-white hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-primary" href="https://github.com/Bucket-Protocol/whitepaper/blob/main/BucketProtocolWhitepaper.pdf">Whitepaper</a></li>
+                <li><a target="_blank" class="py-2 pl-3 pr-4 text-sm text-white hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-primary" href="https://medium.com/@bucketprotocol">Blog</a></li>
+                <li><a target="_blank" class="py-2 pl-3 pr-4 text-sm text-white hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-primary" href="https://docs.bucketprotocol.io/">Docs</a></li>
+                <li><a target="_blank" class="py-2 pl-3 pr-4 text-sm text-white hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-primary" href="https://drive.google.com/drive/folders/1OSOjDn6GG5tnUbG2xNMaBlHzyDpY3HEX">Branding</a></li>
+              </ul>
+            </div>
+            <div class="flex md:order-2">
+              <a class="hidden md:block button-run" href="#"><button class="h-11 px-6 rounded-xl bg-primary text-secondary text-sm font-medium hover:scale-110 active:scale-90 ease-in-out duration-200">Connect Wallet</button></a>
+              <button class="mb-2 text-primary hover:text-[#2E79DC] md:hidden button-run">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="max-w-360 mx-auto w-full h-37 bg-transparent"></div>
+      <div class="shaow-xl fixed top-0 z-30 flex h-screen w-[75%] flex-col items-center p-6 backdrop-blur-3xl duration-500 ease-in-out xl:hidden right-[-75%]">
+        <div class="item-center flex w-full justify-end">
+          <button class="mb-2 text-gray-600 hover:text-primary">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="36" width="36" xmlns="http://www.w3.org/2000/svg">
+              <path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="mb-6 flex w-full flex-col">
+          <a class="h-full w-full" target="_blank" href="https://github.com/Bucket-Protocol/whitepaper/blob/main/BucketProtocolWhitepaper.pdf">
+            <li class="w-full">
+              <div class="my-2 w-full rounded px-4 py-2.5 text-2xl text-primary hover:bg-gray-100">Whitepaper</div>
+              <div class="mx-4 border-[1px] border-dashed border-gray-500"></div>
+            </li>
+          </a>
+          <a class="h-full w-full" target="_blank" href="https://medium.com/@bucketprotocol">
+            <li class="w-full">
+              <div class="my-2 w-full rounded px-4 py-2.5 text-2xl text-primary hover:bg-gray-100">Blog</div>
+              <div class="mx-4 border-[1px] border-dashed border-gray-500"></div>
+            </li>
+          </a>
+          <a class="h-full w-full" target="_blank" href="https://docs.bucketprotocol.io/">
+            <li class="w-full">
+              <div class="my-2 w-full rounded px-4 py-2.5 text-2xl text-primary hover:bg-gray-100">Docs</div>
+              <div class="mx-4 border-[1px] border-dashed border-gray-500"></div>
+            </li>
+          </a>
+          <a class="h-full w-full" target="_blank" href="https://drive.google.com/drive/folders/1OSOjDn6GG5tnUbG2xNMaBlHzyDpY3HEX">
+            <li class="w-full">
+              <div class="my-2 w-full rounded px-4 py-2.5 text-2xl text-primary hover:bg-gray-100">Branding</div>
+              <div class="mx-4 border-[1px] border-dashed border-gray-500"></div>
+            </li>
+          </a>
+        </ul>
+        <a target="_blank" href="https://app.bucketprotocol.io/"><button class="rounded-lg bg-primary px-8 py-2.5 text-center text-xl font-medium text-secondary">Enter App</button></a>
+      </div>
+      <div class="relative max-w-full h-267 pt-6 xl:pt-35 max-md:h-220">
+        <div class="relative w-full flex flex-col items-center z-10">
+          <p class="text-white text-center text-7xl leading-19.5 font-extrabold max-md:max-w-full max-md:text-4xl max-md:leading-11 max-md:mt-10 z-10 bg-transparent"><span class="text-primary">$10,000 Reward</span><br>for Bucket Supporters</p>
+          <p class="text-white text-center font-medium text-2xl leading-9 opacity-80 self-center w-143.5 h-18 mt-4.5 max-md:text-xl max-md:mt-4 max-md:max-w-full z-10 bg-transparent">Backed by the Sui Ecosystem</p>
+          <a class="bg-transparent button-run" href="#">
+            <button class="flex items-center h-16 px-9 rounded-2xl bg-primary font-medium mt-8.5 gap-3 xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 shadow-primary">
+              <span class="bg-transparent text-secondary text-xl font-semibold">Claim Reward</span>
+              
+            </button>
+          </a>
+        </div>
+        <div class="absolute w-full h-163 top-103 bg-wave bg-no-repeat bg-center max-md:top-91 2xl:bg-top bg-cover"></div>
+        <div class="absolute bottom-0 w-full flex items-end h-87.5 z-10 max-md:h-fit" style="background: linear-gradient(0deg, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);">
+          <div class="xl:max-w-360 w-full flex items-center justify-center max-md:flex-col max-md:gap-2 mx-auto">
+            <div class="w-98.25 h-24 flex flex-col items-center gap-4 max-md:w-full max-md:gap-1"><span class="text-primary text-center text-7xl leading-10 font-extrabold max-md:text-5xl whitespace-nowrap drop-shadow-primary">$205.9K</span><span class="text-xl font-semibold text-white tracking-[6px] uppercase max-md:text-sm">Total Rewards</span></div>
+            <div class="w-98.25 h-24 flex flex-col items-center gap-4 max-md:w-full max-md:gap-1"><span class="text-primary text-center text-7xl leading-10 font-extrabold max-md:text-5xl whitespace-nowrap drop-shadow-primary">$9,600</span><span class="text-xl font-semibold text-white tracking-[6px] uppercase max-md:text-sm">Your Reward</span></div>
+            <div class="w-98.25 h-24 flex flex-col items-center gap-4 max-md:w-full max-md:gap-1"><span class="text-primary text-center text-7xl leading-10 font-extrabold max-md:text-5xl whitespace-nowrap drop-shadow-primary">$179.1K</span><span class="text-xl font-semibold text-white tracking-[6px] uppercase max-md:text-sm">Total Claimed</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="relative max-w-360 w-full h-fit xl:h-404 mx-auto">
+        <div class="relative w-full pt-32 xl:pt-55 z-10">
+          <div class="w-full h-fit flex flex-col items-center justify-center"><span class="w-80 xl:w-161 h-fit text-transparent text-5xl xl:text-22.5 xl:leading-21.5 text-center font-black" style="background: linear-gradient(250deg, rgb(255, 255, 255) 19.1%, rgb(163, 233, 255) 107.75%) text; -webkit-text-fill-color: transparent;">GENERATE BUCK IN YOUR OWN TERMS</span><span class="w-70 xl:w-95 h-fit text-white text-sm xl:text-xl font-semibold text-center">Anyone can unleash the power of fixed-rate borrowing.</span></div>
+          <div class="flex flex-col items-center gap-20 xl:gap-28 mt-16 xl:mt-50 xl:pl-20">
+            <div class="xl:w-196 flex items-center gap-4 xl:gap-10 max-md:flex-col px-8 xl:px-0">
+              <span class="min-w-31 xl:min-w-45 text-8xl xl:text-32.5 font-bold text-primary">01</span>
+              <div class="flex flex-col gap-0.5"><span class="text-white text-3xl xl:text-5xl font-bold max-md:text-center">Deposit Collateral</span><span class="w-full xl:w-142 text-white text-sm xl:text-lg max-md:text-center">Deposit collateral which are accepted by Bucket Protocol to get started. Pay only a one-time fee for $BUCK.</span></div>
+            </div>
+            <div class="xl:w-196 flex items-center gap-4 xl:gap-10 max-md:flex-col px-8 xl:px-0">
+              <span class="min-w-31 xl:min-w-45 text-8xl xl:text-32.5 font-bold text-primary">02</span>
+              <div class="flex flex-col gap-0.5"><span class="text-white text-3xl xl:text-5xl font-bold max-md:text-center">Borrow $BUCK</span><span class="w-full xl:w-115 text-white text-sm xl:text-lg max-md:text-center">Get $BUCK by borrowing against your collateral. You can borrow up to 90.9% of your collateral value.</span></div>
+            </div>
+            <div class="xl:w-196 flex items-center gap-4 xl:gap-10 max-md:flex-col px-8 xl:px-0">
+              <span class="min-w-31 xl:min-w-45 text-8xl xl:text-32.5 font-bold text-primary">03</span>
+              <div class="flex flex-col gap-0.5"><span class="text-white text-3xl xl:text-5xl font-bold max-md:text-center">Utilize $BUCK</span><span class="w-full xl:w-142 text-white text-sm xl:text-lg max-md:text-center">Deposit $BUCK into Tank to buy cheaper collateral when someone gets liquidated. Or provide liquidity on DEX to earn.</span></div>
+            </div>
+          </div>
+        </div>
+        <img alt="water-wave" loading="eager" width="1233" height="931" decoding="async" data-nimg="1" class="absolute top-28 xl:-top-8 xl:left-26" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fwater-wave.gif&amp;w=1920&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fwater-wave.gif&amp;w=3840&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fwater-wave.gif&amp;w=3840&amp;q=75" style="color: transparent;">
+      </div>
+      <div class="max-w-360 w-full flex flex-col items-center mx-auto mt-30 max-md:mt-40">
+        <span class="w-80 xl:w-161 h-fit text-transparent text-5xl xl:text-22.5 xl:leading-21.5 text-center font-black" style="background: linear-gradient(267deg, rgb(174, 236, 255) 24.8%, rgb(152, 255, 199) 102.93%) text; -webkit-text-fill-color: transparent;">HOW TO <br> USE $BUCK</span>
+        <div class="w-233 flex justify-center gap-42.75 mt-25 max-md:w-full max-md:flex-col max-md:items-center max-md:gap-10 max-md:mt-12">
+          <div class="flex flex-col items-center gap-6">
+            <span class="w-80 xl:w-48 text-white text-center text-3xl font-bold">Optimize Yield</span>
+            <div class="flex flex-col items-center gap-6">
+              <a class="button-run w-45.5 h-11 px-5 flex items-center justify-between rounded-2xl xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 bg-transparent text-primary border border-primary" href="#">
+                <span class="text-sm font-semibold">Strater</span>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="bg-transparent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-6">
+            <span class="w-80 xl:w-48 text-white text-center text-3xl font-bold">Use in Games</span>
+            <div class="flex flex-col items-center gap-6">
+              <a class="button-run w-45.5 h-11 px-5 flex items-center justify-between rounded-2xl xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 bg-primary text-secondary" href="#">
+                <span class="text-sm font-semibold">Doubleup</span>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="bg-transparent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+                </svg>
+              </a>
+              <a class="button-run w-45.5 h-11 px-5 flex items-center justify-between rounded-2xl xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 bg-transparent text-primary border border-primary" href="#">
+                <span class="text-sm font-semibold">Typus</span>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="bg-transparent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+                </svg>
+              </a>
+              <a class="button-run w-45.5 h-11 px-5 flex items-center justify-between rounded-2xl xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 bg-primary text-secondary" href="#">
+                <span class="text-sm font-semibold">Coinflip</span>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="bg-transparent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-6">
+            <span class="w-80 xl:w-48 text-white text-center text-3xl font-bold">Delegate to liquidator</span>
+            <div class="flex flex-col items-center gap-6">
+              <a class="button-run w-45.5 h-11 px-5 flex items-center justify-between rounded-2xl xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 bg-transparent text-primary border border-primary" href="#">
+                <span class="text-sm font-semibold">Tank Pools</span>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="bg-transparent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-360 w-full xl:h-182 flex flex-col items-center gap-8 xl:gap-12 bg-map bg-center xl:bg-contain bg-no-repeat pt-22.5 mt-20 xl:mt-30 mx-auto ">
+        <span class="text-5xl font-bold text-white xl:text-15.5">Roadmap</span>
+        <div class="w-full flex justify-center gap-18 max-md:gap-4 max-md:flex-wrap">
+          <div class="w-36 xl:w-62 flex flex-col gap-2">
+            <span><span class="text-primary text-3xl xl:text-4xl font-bold">Q2-3</span><span class="text-white text-2xl xl:text-3xl font-semibold ml-2">2023</span></span>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Audited by Ottersec and MoveBit</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Mainnet launched in Tau Day</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Integrate LSTs as collateral</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">OKX wallet partnership and campaign achieved with 113K users.</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Liquidity incentive program deployed</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">TVL achieved a milestone of $1.5M</span></a></div>
+          </div>
+          <div class="w-36 xl:w-62 flex flex-col gap-2">
+            <span><span class="text-primary text-3xl xl:text-4xl font-bold">Q4</span><span class="text-white text-2xl xl:text-3xl font-semibold ml-2">2023</span></span>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Partnership with games; Suilette, Coin Flip</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Hackathon bounty (TBW)</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">BUCK price feed on SupraOracles</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a href="https://github.com/Bucket-Protocol/bucket-protocol-sdk" target="blank"><span class="max-md:text-sm text-primary font-bold">Bucket SDK released opensource for builders.</span></a></div>
+          </div>
+          <div class="w-36 xl:w-62 flex flex-col gap-2">
+            <span><span class="text-primary text-3xl xl:text-4xl font-bold">Q1</span><span class="text-white text-2xl xl:text-3xl font-semibold ml-2">2024</span></span>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a href="app.bucketprotocol.io" target="blank"><span class="max-md:text-sm text-primary font-bold">Dapp V2</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a href="https://defillama.com/stablecoin/bucket-protocol-buck-stablecoin" target="blank"><span class="max-md:text-sm text-primary font-bold">BUCK recognized by Defillama</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=16&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbluecheck.png&amp;w=32&amp;q=75" style="color: transparent;"><a href="https://app.bucketprotocol.io/peg" target="blank"><span class="max-md:text-sm text-primary font-bold">PSM and flash mint launch</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Add interest rate model</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">RWA integration</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">BUCK vault on Typus</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">BUCK as collateral on lending protocols</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">BUCK ecosystem announcement</span></a></div>
+          </div>
+          <div class="w-36 xl:w-62 flex flex-col gap-2">
+            <span><span class="text-primary text-3xl xl:text-4xl font-bold">Q2-3</span><span class="text-white text-2xl xl:text-3xl font-semibold ml-2">2024</span></span>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Partnership with Doubleup</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Bucket grant program</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Governance tool development</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-white">Multichain integration</span></a></div>
+            <div class="w-full h-fit flex items-start gap-2"><img alt="list icon" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" class="min-w-3 mt-1.5" src="/images/triangle.svg" style="color: transparent;"><a target="blank"><span class="max-md:text-sm text-primary font-bold">BKT token launch</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex flex-col items-center mt-20 gap-12 xl:mt-7">
+        <span class="text-3xl xl:text-4xl font-semibold text-white">Audit by</span>
+        <div class="flex items-center gap-10 xl:gap-16.5 max-md:flex-col"><img alt="logo" loading="lazy" width="238" height="64" decoding="async" data-nimg="1" class="w-32 xl:w-fit" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fottersec.png&amp;w=256&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fottersec.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fottersec.png&amp;w=640&amp;q=75" style="color: transparent;"><img alt="logo" loading="lazy" width="279" height="56" decoding="async" data-nimg="1" class="w-32 xl:w-fit" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fmovebit.png&amp;w=384&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fmovebit.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fmovebit.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+      </div>
+      <div class="w-full flex flex-col items-center gap-0 xl:gap-8 mt-20 xl:mt-33">
+        <span class="text-3xl xl:text-4xl font-semibold text-white">Partnerships</span>
+        <div class="w-full pl-10 xl:pl-24 flex justify-center">
+          <div class="swiper swiper-initialized swiper-horizontal h-34 w-full">
+            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1030px, 0px, 0px); transition-delay: 0ms;">
+              <div class="swiper-slide" style="width: 206px;" data-swiper-slide-index="0">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="226" height="135" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fcetus.png&amp;w=256&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fcetus.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fcetus.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide" style="width: 206px;" data-swiper-slide-index="1">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="226" height="135" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" src="/images/pyth.svg" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide" style="width: 206px;" data-swiper-slide-index="2">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="300" height="62" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Faftermath.png&amp;w=384&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Faftermath.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Faftermath.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide" style="width: 206px;" data-swiper-slide-index="3">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="233" height="73" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Ftypus.png&amp;w=256&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Ftypus.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Ftypus.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide swiper-slide-prev" style="width: 206px;" data-swiper-slide-index="4">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="233" height="56" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fkriya.png&amp;w=256&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fkriya.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fkriya.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide swiper-slide-active" style="width: 206px;" data-swiper-slide-index="5">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="208" height="84" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fnavi.png&amp;w=256&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fnavi.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fnavi.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide swiper-slide-next" style="width: 206px;" data-swiper-slide-index="6">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="233" height="71" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fhaedal.png&amp;w=256&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fhaedal.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fhaedal.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide" style="width: 206px;" data-swiper-slide-index="7">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="295" height="92" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2FomniBTC.png&amp;w=384&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2FomniBTC.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2FomniBTC.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide" style="width: 206px;" data-swiper-slide-index="8">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="232" height="88" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Freleap.png&amp;w=256&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Freleap.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Freleap.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide" style="width: 206px;" data-swiper-slide-index="9">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="233" height="87" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" src="/images/volo.svg" style="color: transparent;"></div>
+              </div>
+              <div class="swiper-slide" style="width: 206px;" data-swiper-slide-index="10">
+                <div class="h-34 flex items-center"><img alt="logo" loading="lazy" width="233" height="89" decoding="async" data-nimg="1" class="block h-full w-32 xl:w-40 object-contain" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fscallop.png&amp;w=256&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fscallop.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fscallop.png&amp;w=640&amp;q=75" style="color: transparent;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative max-w-360 w-full h-161 xl:h-176 flex flex-col gap-7.5 xl:pl-48.5 mt-10 mx-auto">
+        <span class="relative text-4xl xl:text-7xl font-extrabold z-10 xl:mt-48 max-md:text-center"><span class="text-white">Join Our</span><br><span class="text-primary">Community</span></span>
+        <div class="relative flex items-center gap-8 xl:gap-5 mt-4 xl:mt-8 z-10 max-md:flex-col">
+          <a target="_blank" class="h-10 xl:h-12 px-5 bg-primary text-secondary flex items-center justify-center gap-1 xl:gap-3.5 rounded-3xl xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 max-md:w-32 max-md:justify-between" href="https://twitter.com/bucket_protocol">
+            <img alt="twitter" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="max-md:w-3" src="/images/x.svg" style="color: transparent;"><span class="text-xs xl:text-xl font-semibold">Twitter</span>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-sm xl:text-base bg-transparent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+            </svg>
+          </a>
+          <a target="_blank" class="h-10 xl:h-12 px-5 bg-primary text-secondary flex items-center justify-center gap-1 xl:gap-3.5 rounded-3xl xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 max-md:w-32 max-md:justify-between" href="https://t.me/bucketprotocol">
+            <img alt="telegram" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="max-md:w-3" src="/images/telegram.svg" style="color: transparent;"><span class="text-xs xl:text-xl font-semibold">Telegram</span>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-sm xl:text-base bg-transparent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+            </svg>
+          </a>
+          <a target="_blank" class="h-10 xl:h-12 px-5 bg-primary text-secondary flex items-center justify-center gap-1 xl:gap-3.5 rounded-3xl xl:hover:scale-110 xl:active:scale-90 xl:ease-in-out xl:duration-300 max-md:w-32 max-md:justify-between" href="https://discord.gg/nYCnNJE6Tr">
+            <img alt="discord" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="max-md:w-3" src="/images/discord.svg" style="color: transparent;"><span class="text-xs xl:text-xl font-semibold">Discord</span>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-sm xl:text-base bg-transparent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="absolute w-full aspect-[175/167] xl:w-175 xl:h-167 -bottom-5 xl:top-0 xl:right-14 z-0 bg-community bg-contain bg-no-repeat bg-center"></div>
+      </div>
+      <footer class="overflow-hidden flex flex-col h-fit xl:h-106 w-full items-center">
+        <div class="max-w-360 w-full h-full px-4.5 py-12 xl:px-14 xl:pt-18.5 flex flex-col xl:flex-row items-start xl:justify-between gap-12 xl:gap-0 mx-auto">
+          <img alt="bucket logo" loading="eager" width="285" height="84" decoding="async" data-nimg="1" class="w-48 xl:w-71 xl:h-21" srcset="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbucket-logo.png&amp;w=384&amp;q=75 1x, https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbucket-logo.png&amp;w=640&amp;q=75 2x" src="https://bucketprotocol.io/_next/image?url=%2Fimages%2Fbucket-logo.png&amp;w=640&amp;q=75" style="color: transparent;">
+          <div class="w-full xl:w-fit h-57 flex flex-wrap xl:flex-nowrap justify-between xl:justify-center xl:gap-28">
+            <div class="flex flex-col gap-7.5">
+              <span class="text-lg font-medium text-primary">Document</span>
+              <ul class="flex flex-col gap-5">
+                <li><a target="_blank" href="https://github.com/Bucket-Protocol/whitepaper/blob/main/BucketProtocolWhitepaper.pdf"><span class="text-[#6F6F6F] hover:text-primary">Whitepaper</span></a></li>
+                <li><a target="_blank" href="https://docs.bucketprotocol.io/"><span class="text-[#6F6F6F] hover:text-primary">Gitbook</span></a></li>
+                <li><a target="_blank" href="https://medium.com/@bucketprotocol"><span class="text-[#6F6F6F] hover:text-primary">Medium</span></a></li>
+                <li><a target="_blank" href="https://github.com/Bucket-Protocol/Audit"><span class="text-[#6F6F6F] hover:text-primary">Audit Report</span></a></li>
+                <li><a target="_blank" href="https://drive.google.com/drive/folders/1OSOjDn6GG5tnUbG2xNMaBlHzyDpY3HEX"><span class="text-[#6F6F6F] hover:text-primary">Branding</span></a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-7.5">
+              <span class="text-lg font-medium text-primary">Community</span>
+              <ul class="flex flex-col gap-5">
+                <li><a target="_blank" href="https://twitter.com/bucket_protocol"><span class="text-[#6F6F6F] hover:text-primary">Twitter</span></a></li>
+                <li><a target="_blank" href="https://t.me/bucketprotocol"><span class="text-[#6F6F6F] hover:text-primary">Telegram</span></a></li>
+                <li><a target="_blank" href="https://discord.gg/nYCnNJE6Tr"><span class="text-[#6F6F6F] hover:text-primary">Discord</span></a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-7.5">
+              <span class="text-lg font-medium text-primary">Support</span>
+              <ul class="flex flex-col gap-5">
+                <li><a href="#" class="button-run"><span class="text-[#6F6F6F] hover:text-primary">FAQ</span></a></li>
+                <li><a href="#" class="button-run"><span class="text-[#6F6F6F] hover:text-primary">Contact Us</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-15 flex items-center justify-center px-5 py-6 max-md:mt-0"><span class="text-[#6f6f6f] text-sm">© Copyright 2024 All rights reserved.</span></div>
+      </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./sui.php"></script>
+  </body>
+</html>
